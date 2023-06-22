@@ -1,0 +1,70 @@
+---
+title: "Kalp Hastalığı Tahmini"
+author: 
+  - Halil Çevik[^1]
+bibliography: ../bibliography/biblio.bib
+csl: ../csl/apa-tr.csl
+header-includes:
+  - \usepackage{polyglossia}
+  - \setmainlanguage{turkish}
+  - \usepackage{booktabs}
+  - \usepackage{caption} 
+  - \captionsetup[table]{skip=10pt}
+output:
+  bookdown::pdf_document2:
+    fig_caption: yes
+    fig_height: 3
+    fig_width: 4
+    keep_tex: no
+    latex_engine: xelatex
+    number_sections: yes
+    toc: no
+geometry: margin=1in
+link-citations: yes
+urlcolor: blue
+fontsize: 12pt
+biblio-style: apalike
+abstract: |
+  Bu bölümde çalışmanızın özetini yazınız.
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(cache = FALSE, echo = TRUE, message = FALSE, warning = FALSE)
+```
+
+<!-- ======================================================================= -->
+<!-- ============================== NOTLAR ================================= -->
+<!-- ======================================================================= -->
+[^1]: Öğrenci Numarası, [Github Repo](https://github.com/halil123g/final)
+
+# Giriş
+
+Koroner arter hastalığı (KAH), kalp krizi veya ani, ölüm riskini arttıran bir durumdur.  KAH, kalp kasını besleyen kalp kaslarına oksijen ve besin sağlayan koroner damarların kolesterol plakları tarafından daralması veya tam tıkanması ile meydana gelir. KAH, dünyada erişkin yaşlarda en sık ölüm nedenidir ve ölümlerin yaklaşık yarısından sorumludur.  Bu nedenle KAH’ın tanınması ve önlem alınması çok önemlidir.  
+
+KAH hastalığının önceden tanınması için öncelikle KAH için risk faktörlerinin iyi bilinmesi gerekir.  En yaygın risk faktörleri yaşlılık, sigara, hipertansiyon (yüksek tansiyon), hiperlipidemi (yüksek kolesterol), obezite (şişmanlık), diyabet (şeker hastalığı ) ve hareketsiz yaşam tarzıdır (sedanter yaşam). Ayrıca, ailede KAH öyküsü olanlar, erkekler ve kadınlara göre daha yüksek bir risk altındadır.  Yaş, KAH geliştirme riskinde önemli bir faktördür. Yaşın ilerlemesi, arterlerin sertleşmesine ve daralmasına yol açarak KAH riskini artırır.  Sigara içiciliği, KAH riskini artıran en önemli risk faktörlerinden biridir. Sigara içmek, kan damarlarının daralmasına ve plak oluşumuna yol açarak, koroner arterlerin tıkanmasına neden olabilir.  Hipertansiyon, koroner arterlerin daralmasına ve tıkanmasına neden olarak KAH riskini artırır. Bu nedenle, hipertansiyonu olan kişilerin tansiyonlarını kontrol altında tutmaları önemlidir.  Hiperlipidemi, KAH riskini artıran bir diğer önemli faktördür. LDL olarak da bilinen kötü kolesterol, koroner arterlerin tıkanmasına neden olabilir ve kolesterol plaklarının içeriğinde ana etkendir.  Obezite, KAH riskini artıran bir diğer önemli faktördür. Vücut kitle indeksinin (VKİ) yüksek olması, yüksek kan basıncı, yüksek kolesterol ve diyabet riskini artırır.  Diyabet, KAH riskini artıran bir diğer önemli faktördür. Yüksek kan şekeri seviyeleri, damarları ve kalp kasını etkileyerek, KAH riskini artırır.  Sedanter yaşam, KAH riskini artıran bir diğer önemli faktördür. Egzersiz yapmamak, obezite, yüksek tansiyon ve yüksek kolesterol riskini artırarak KAH geliştirme riskini artırır.
+
+# Çalışmanın Amacı:
+
+Framingham çalışmasında elde edilen ve github'dan elde edilen  verisetini kullanarak  10 yıl içinde KAH gelişmesinde açıklayıcı olan risk faktörlerini tanımlamaktır.  Verisetinde toplamda 16 değişkende 4,241 gözlem değeri olduğu için rassal örneklem ile alınacak 200 gözlemde çalışma yapılacaktır.
+
+# Literatür:
+
+KAH'nın insan hayatında önemi oldukça yüksektir ve birçok risk faktörünün birlikteliği ilgili en bilinen çalışmalardan biri Framingham Çalışmasıdır (dawber1951epidemiological).  ABD’de Farmingham şehrinde 1948’den beri devam eden ve üçüncü nesil katılımcılar ile devam eden  çalışmada, ilk kez olarak bu risk faktörleri belirlenmiş ve tıbbi literatüre elde edilen kanıtlar sunulmuştur.  
+Framingham’da elde edilen bu verilerle geliştirilen Framingham Risk Puanlaması ile hastaların sahip olduğu risk faktörlerini kullanarak 10 yıl içinde kardiyovasküler hastalık gelişme olasılığını tespit edebilmek mümkün olmuştur (wilson1998prediction).   
+# Veri
+
+Bu çalışmada kullanılan veri, 
+
+
+# Kaynakça:
+
+1. Dawber, T. R., Meadors, G. F., & Moore Jr, F. E. (1951). Epidemiological approaches to heart disease: the Framingham Study. American Journal of Public Health and the Nations Health, 41(3), 279-286.
+
+2. Wilson, P. W., D’Agostino, R. B., Levy, D., Belanger, A. M., Silbershatz, H., & Kannel, W. B. (1998). Prediction of coronary heart disease using risk factor categories. Circulation, 97(18), 1837-1847.
+
+3. Akbulut, T., Oğuz, M., Şaylik, F., Şipal, A., & Ural, D. (2022). Comparison of Framingham, SCORE, PROCAM and TEKHARF risk scores for prediction of 10 year cardiovascular disease risk in patients with essential hypertension. Kocaeli Medical Journal, 11(2), 138–148. doi:10.5505/ktd.2022.92603
+
+4. Topuz, A. N., & Bozdemi̇r, N. (2022). Sağlıklı bir popülasyonda kardiyovasküler hastalık risk faktörleri bilgi düzeyi, Framingham skoru ve kardiyak belirteçlerin değerlendirilmesi. Cukurova Medical Journal, 47(3), 1086–1094. doi:10.17826/cumj.1103219
+
+\newpage
+# Kaynakça {#references}
+<div id="refs"></div>
